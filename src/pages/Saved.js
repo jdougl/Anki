@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { Outlet } from "react-router-dom";
 import { StorageContext } from "../context/StorageContext";
-import { CryptoContext } from "./../context/CryptoContext";
-import { Link } from "react-router-dom";
+import { CryptoContext } from "../context/CryptoContext";
+import Link from 'next/link';
 
 const SaveBtn = ({ data }) => {
   const { saveCoin, allCoins, removeCoin } = useContext(StorageContext);
@@ -189,7 +188,6 @@ const Saved = () => {
           </svg>
         </button>
       </div>
-      <Outlet />
     </section>
   );
 };

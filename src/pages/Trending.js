@@ -1,8 +1,7 @@
 import { data } from "autoprefixer";
 import React, { useContext } from "react";
-import { Outlet } from "react-router-dom";
 import { TrendingContext } from "../context/TrendingContext";
-import TrendingCoin from "./../components/TrendingCoin";
+import TrendingCoin from "../components/TrendingCoin";
 
 const Trending = () => {
   const { trendData, resetTrendingResult } = useContext(TrendingContext);
@@ -38,7 +37,6 @@ const Trending = () => {
           </svg>
         </button>
       </div>
-      <Outlet />
     </section>
   );
 };

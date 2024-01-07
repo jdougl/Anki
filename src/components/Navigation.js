@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 
 const Navigation = () => {
   return (
@@ -8,9 +8,8 @@ const Navigation = () => {
     border border-cyan rounded-lg
     "
     >
-      <NavLink
-        to="/"
-        end
+      <Link
+        href="/"
         className={({ isActive }) => {
           return `w-full text-base text-center font-nunito m-2.5
 
@@ -23,10 +22,10 @@ ${
         }}
       >
         Crypto
-      </NavLink>
+      </Link>
 
-      <NavLink
-        to="/trending"
+      <Link
+        href="/trending"
         className={({ isActive }) => {
           return `w-full text-base text-center font-nunito m-2.5
 
@@ -39,10 +38,10 @@ ${
         }}
       >
         trending
-      </NavLink>
+      </Link>
 
-      <NavLink
-        to="/saved"
+      <Link
+        href="/saved"
         className={({ isActive }) => {
           return `w-full text-base text-center font-nunito m-2.5
 
@@ -55,7 +54,7 @@ ${
         }}
       >
         saved
-      </NavLink>
+      </Link>
     </nav>
   );
 };
