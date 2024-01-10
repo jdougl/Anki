@@ -28,8 +28,8 @@ const SearchInput = ({ handleSearch }) => {
   return (
     <>
       <form
-        className="w-96 relative flex items-center
-    ml-7 font-nunito
+        className="w-96
+    ml-7 font-nunito absolute top-[1.5rem] left-[1.5rem]
     "
         onSubmit={handleSubmit}
       >
@@ -43,7 +43,7 @@ const SearchInput = ({ handleSearch }) => {
         required outline-0 border border-transparent 
         focus:border-cyan
          "
-          placeholder="search here..."
+          placeholder="Search ticker, company or profile..."
         />
         <button type="submit" className="absolute right-1 cursor-pointer">
           <img src={searchIcon} className="w-full h-auto" alt="search" />

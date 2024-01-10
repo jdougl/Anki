@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react";
+import Link from 'next/link';
 import ReactDOM from "react-dom";
 import { useNavigate, useParams } from "react-router-dom";
 import { useLayoutEffect } from "react";
@@ -234,32 +235,32 @@ const CryptoDetails = () => {
 
               <div className="flex w-full mt-4 justify-between">
                 <div className="flex flex-col">
-                  <a
+                  <Link
                     target={"_blank"}
                     rel="noreferrer"
                     className="text-sm bg-gray-200 text-gray-100 px-1.5 py-0.5 my-1 rounded"
                     href={data?.links?.homepage[0]}
                   >
                     {data?.links?.homepage[0].substring(0, 30)}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     target={"_blank"}
                     rel="noreferrer"
                     className="text-sm bg-gray-200 text-gray-100 px-1.5 py-0.5 my-1 rounded"
                     href={data?.links?.blockchain_site[0]}
                   >
                     {data?.links?.blockchain_site[0].substring(0, 30)}
-                  </a>
+                  </Link>
 
                   {data?.links?.official_forum_url[0] && (
-                    <a
+                    <Link
                       target={"_blank"}
                       rel="noreferrer"
                       className="text-sm bg-gray-200 text-gray-100 px-1.5 py-0.5 my-1 rounded"
                       href={data?.links?.official_forum_url[0]}
                     >
                       {data?.links?.official_forum_url[0].substring(0, 30)}
-                    </a>
+                    </Link>
                   )}
                 </div>
 
@@ -353,7 +354,7 @@ const CryptoDetails = () => {
 
             <div className="absolute bottom-8 right-8 flex items-center">
               {data.links.repos_url.github[0] && (
-                <a
+                <Link
                   className="text-lg px-1"
                   target={"_blank"}
                   rel="noreferrer"
@@ -379,10 +380,10 @@ const CryptoDetails = () => {
                     />
                     <path fill="rgba(0, 0, 0, 0)" d="M0 0h24v24H0z" />
                   </svg>
-                </a>
+                </Link>
               )}
               {data.links.twitter_screen_name && (
-                <a
+                <Link
                   className="text-lg px-1"
                   target={"_blank"}
                   rel="noreferrer"
@@ -409,7 +410,7 @@ const CryptoDetails = () => {
                 </a>
               )}
               {data.links.subreddit_url && (
-                <a
+                <Link
                   className="text-lg px-1"
                   target={"_blank"}
                   rel="noreferrer"
@@ -435,10 +436,10 @@ const CryptoDetails = () => {
                     />
                     <path fill="rgba(0, 0, 0, 0)" d="M0 0h24v24H0z" />
                   </svg>
-                </a>
+                </Link>
               )}
               {data.links.facebook_username && (
-                <a
+                <Link
                   className="text-lg px-1"
                   target={"_blank"}
                   rel="noreferrer"

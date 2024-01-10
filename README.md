@@ -4,9 +4,6 @@ This repository contains code for bloomberg-esque crypto terminal using NextJS <
 
 Full Disclosure - I took some initial code from Codebucks27 from his react tutorial, i am now converting it to NextJS and adding a lot more features, turning this into a full fledged application.
 
-<h3 align="left">▶ Support me via:</h3><br />
-<p><a href="https://www.buymeacoffee.com/CodeBucks" target="_blank"> <img  src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="50" width="210" alt="CodeBucks" ></img></a></p><br />
-
 ### Images of The Crypto Screener Website:
 
 ![Crypto](https://github.com/codebucks27/CryptoBucks-A-crypto-screener-application/blob/main/Website-Images/Crypto.png)

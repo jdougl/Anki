@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../components/Logo";
 import Navigation from "../components/Navigation";
+import Search from "../components/Search";
 import { CryptoProvider } from "../context/CryptoContext";
 import { StorageProvider } from "../context/StorageContext";
 import { TrendingProvider } from "../context/TrendingContext";
@@ -17,6 +18,7 @@ const HomePage = () => {
           >
             <div className="w-screen h-screen bg-gray-300 fixed -z-10" />
             <Logo />
+            <Search />
             <Navigation />
 
           </main>

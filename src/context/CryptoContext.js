@@ -31,18 +31,18 @@ export const CryptoProvider = ({ children }) => {
     setError({ ...error, data: "" });
     setCryptoData();
     setTotalPages(13220);
-    // try {
-    //   const data = await fetch(
-    //     `https://api.coingecko.com/api/v3/coins/list`
-    //   )
-    //     .then((res) => res.json())
-    //     .then((json) => json);
+     try {
+      const data = await fetch(
+        `https://api.coingecko.com/api/v3/coins/list`
+      )
+         .then((res) => res.json())
+        .then((json) => json);
 
-    //   console.log(data);
-    //   setTotalPages(data.length);
-    // } catch (error) {
-    //   console.log(error);
-    // }
+       console.log(data);
+      setTotalPages(data.length);
+     } catch (error) {
+       console.log(error);
+     }
 
     try {
       const data = await fetch(

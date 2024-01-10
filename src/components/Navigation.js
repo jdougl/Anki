@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navigation = () => {
   return (
     <nav
-      className="w-[40%] mt-16 flex justify-around align-middle
+      className="w-[100%] mt-16 flex justify-around align-middle
     border border-cyan rounded-lg
     "
     >
@@ -21,7 +21,7 @@ ${
     border-0 cursor-pointer rounded capitalize font-semibold`;
         }}
       >
-        Crypto
+        Home
       </Link>
 
       <Link
@@ -37,7 +37,7 @@ ${
     border-0 cursor-pointer rounded capitalize font-semibold`;
         }}
       >
-        trending
+        News
       </Link>
 
       <Link
@@ -53,7 +53,7 @@ ${
     border-0 cursor-pointer rounded capitalize font-semibold`;
         }}
       >
-        saved
+        Maps
       </Link>
     </nav>
   );
