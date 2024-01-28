@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import Navigation from "../components/Navigation";
 import Search from "../components/Search";
+import Chart from "../components/Chart";
 import { CryptoProvider } from "../context/CryptoContext";
 import { StorageProvider } from "../context/StorageContext";
 import { TrendingProvider } from "../context/TrendingContext";
@@ -20,6 +21,7 @@ const HomePage = () => {
             <Logo />
             <Search />
             <Navigation />
+            <Chart />
 
           </main>
         </StorageProvider>
